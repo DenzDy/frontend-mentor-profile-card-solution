@@ -16,29 +16,15 @@ body{
     "bot bot bot bot";
     opacity: 1;
     position: relative;
-    background: hsl(185, 75%, 39%);
     justify-content: center;
     align-items: center;
+    background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg), hsl(185, 75%, 39%);
+    background-position: top -60vw left -40vh, bottom -60vw right -40vh;
+    background-repeat: no-repeat, no-repeat;
+    background-size: clamp(55rem, 100vw, 100rem);
+    
+
 }
-
-.background_sizing2{
-    position: absolute;
-    align-self: top;
-    width: 150%;
-    bottom: clamp(35rem,60vh, 40rem);
-    right: 50vw;
-}
-
-.background_sizing1{
-    position: absolute;
-    width: 150%;
-    top: clamp(35rem,60vw, 40rem);
-    left: 50vw;
-}
-
-
-
-
 
 .card{
     justify-self: center;
@@ -154,5 +140,10 @@ body{
     flex-direction: row;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px) {
+    body{
+        background-size: clamp(80rem, 80vw, 110vw);
+    }
+    
 }
+
